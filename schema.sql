@@ -1,6 +1,5 @@
-# supabase-water-dashboard-nsw
+-- schema.sql (Postgres / Supabase)
 
-```sql
 CREATE TABLE dams (
     dam_id VARCHAR(20) PRIMARY KEY,
     dam_name VARCHAR(255) NOT NULL,
@@ -77,4 +76,3 @@ CREATE TABLE dam_group_members (
     FOREIGN KEY (group_name) REFERENCES dam_groups(group_name),
     FOREIGN KEY (dam_id) REFERENCES dams(dam_id)
 );
-```
