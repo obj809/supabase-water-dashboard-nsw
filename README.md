@@ -3,6 +3,12 @@
 ```text
 supabase-water-dashboard-nsw/
 │
+├── scripts/
+│   ├── create_schema.py
+│   ├── db_connect.py
+│   ├── seed_data.py
+│   └── verify_seed.py
+│
 ├── seeding/
 │   ├── db.py
 │   ├── seed_dam_group_members.py
@@ -13,16 +19,12 @@ supabase-water-dashboard-nsw/
 │   ├── seed_overall_dam_analysis.py
 │   └── seed_specific_dam_analysis.py
 │
-├── .env
-├── example.env
 ├── .gitignore
 ├── commands.md
-├── create_schema.py
-├── db_connect.py
+├── example.env
 ├── README.md
 ├── requirements.txt
-├── schema.sql
-└── seed_data.py
+└── schema.sql
 ```
 
 ```sql
