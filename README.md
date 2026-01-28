@@ -13,9 +13,6 @@ supabase-water-dashboard-nsw/
 │   ├── seed_overall_dam_analysis.py
 │   └── seed_specific_dam_analysis.py
 │
-├── venv/
-│   └── (python virtual environment)
-│
 ├── .env
 ├── example.env
 ├── .gitignore
