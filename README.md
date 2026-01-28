@@ -1,6 +1,6 @@
 # supabase-water-dashboard-nsw
 
-
+```text
 supabase-water-dashboard-nsw/
 │
 ├── seeding/
@@ -26,7 +26,7 @@ supabase-water-dashboard-nsw/
 ├── requirements.txt
 ├── schema.sql
 └── seed_data.py
-
+```
 
 ```sql
 CREATE TABLE dams (
