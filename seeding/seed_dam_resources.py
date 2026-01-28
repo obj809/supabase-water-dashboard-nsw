@@ -5,7 +5,7 @@ import datetime as dt
 from dateutil.relativedelta import relativedelta
 from psycopg2.extras import execute_values
 
-from seeding.db import get_connection
+from db import get_connection
 
 
 def month_starts(n_months: int = 24) -> list[str]:

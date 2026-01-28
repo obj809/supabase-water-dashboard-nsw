@@ -4,7 +4,7 @@ import datetime as dt
 
 from dateutil.relativedelta import relativedelta
 
-from seeding.db import get_connection
+from db import get_connection
 
 
 def last_day_prev_month() -> str:

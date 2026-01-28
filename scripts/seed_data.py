@@ -21,7 +21,7 @@ SEEDING_SCRIPTS: List[str] = [
 ]
 
 def root_dir() -> str:
-    return os.path.dirname(os.path.abspath(__file__))
+    return os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 def main() -> None:
     if load_dotenv:

@@ -1,7 +1,7 @@
 # seeding/seed_dams.py
 
 from psycopg2.extras import execute_values
-from seeding.db import get_connection
+from db import get_connection
 
 DAMS = [
     ("203042", "Toonumbar Dam", 10814, -28.602383, 152.763769),

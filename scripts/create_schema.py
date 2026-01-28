@@ -11,7 +11,7 @@ DB_URL = os.getenv("SUPABASE_DATABASE_URL")
 if not DB_URL:
     raise RuntimeError("SUPABASE_DATABASE_URL not set")
 
-ROOT_DIR = Path(__file__).resolve().parent
+ROOT_DIR = Path(__file__).resolve().parent.parent
 SCHEMA_FILE = ROOT_DIR / "schema.sql"
 
 if not SCHEMA_FILE.exists():

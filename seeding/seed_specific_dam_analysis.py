@@ -2,7 +2,7 @@
 
 import datetime as dt
 
-from seeding.db import get_connection
+from db import get_connection
 
 
 def last_day_prev_month() -> str:

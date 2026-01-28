@@ -4,7 +4,7 @@ import datetime as dt
 
 from psycopg2.extras import execute_values
 
-from seeding.db import get_connection
+from db import get_connection
 
 
 SQL = """

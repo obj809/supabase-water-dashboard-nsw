@@ -1,7 +1,7 @@
 # seeding/seed_dam_groups.py
 
 from psycopg2.extras import execute_values
-from seeding.db import get_connection
+from db import get_connection
 
 GROUPS = [
     ("sydney_dams",),

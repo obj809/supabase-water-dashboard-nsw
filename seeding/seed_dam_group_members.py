@@ -1,7 +1,7 @@
 # seeding/seed_dam_group_members.py
 
 from psycopg2.extras import execute_values
-from seeding.db import get_connection
+from db import get_connection
 
 MEMBERS = [
     ("sydney_dams","212232"), ("sydney_dams","212220"), ("sydney_dams","212211"),
