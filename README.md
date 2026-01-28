@@ -1,5 +1,33 @@
 # supabase-water-dashboard-nsw
 
+
+supabase-water-dashboard-nsw/
+│
+├── seeding/
+│   ├── db.py
+│   ├── seed_dam_group_members.py
+│   ├── seed_dam_groups.py
+│   ├── seed_dam_resources.py
+│   ├── seed_dams.py
+│   ├── seed_latest_data.py
+│   ├── seed_overall_dam_analysis.py
+│   └── seed_specific_dam_analysis.py
+│
+├── venv/
+│   └── (python virtual environment)
+│
+├── .env
+├── example.env
+├── .gitignore
+├── commands.md
+├── create_schema.py
+├── db_connect.py
+├── README.md
+├── requirements.txt
+├── schema.sql
+└── seed_data.py
+
+
 ```sql
 CREATE TABLE dams (
     dam_id VARCHAR(20) PRIMARY KEY,
