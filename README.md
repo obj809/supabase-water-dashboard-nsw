@@ -7,13 +7,10 @@ A Supabase PostgreSQL-based system for tracking and analyzing dam data across NS
 - [Goals & MVP](#goals--mvp)
 - [Tech Stack](#tech-stack)
 - [How To Use](#how-to-use)
-- [Design Goals](#design-goals)
 - [Project Features](#project-features)
 - [Project Structure](#project-structure)
 - [Additions & Improvements](#additions--improvements)
 - [Learning Highlights](#learning-highlights)
-- [Known Issues](#known-issues)
-- [Challenges](#challenges)
 - [Contact](#contact)
 
 ## Goals & MVP
@@ -36,14 +33,6 @@ Create a cloud-hosted system that stores dam metadata, tracks water storage leve
 4. Run database setup: `python scripts/db_connect.py && python scripts/create_schema.py && python scripts/seed_data.py`
 5. Verify data: `python scripts/verify_seed.py`
 
-## Design Goals
-
-- **Cloud-Native**: Hosted on Supabase PostgreSQL for accessibility
-- **Data Integrity**: Foreign keys with cascading relationships
-- **Idempotency**: Upsert operations for safe re-runs
-- **Security**: Parameterized queries to prevent SQL injection
-- **Modularity**: Separate seeding scripts with dependency-ordered execution
-
 ## Project Features
 
 - Dam grouping system (Sydney, popular, large, small, greatest released)
@@ -56,18 +45,6 @@ Create a cloud-hosted system that stores dam metadata, tracks water storage leve
 - Cloud PostgreSQL deployment with Supabase
 - Orchestrated data pipelines with dependency ordering
 - Upsert patterns and composite primary keys in PostgreSQL
-
-## Known Issues
-
-- Synthetic data; does not reflect actual NSW dam levels
-- Manual refresh required; no automated scheduling
-- Analysis calculations use fixed values
-
-## Challenges
-
-- Establishing correct seeding order for foreign key constraints
-- Designing composite primary keys for analysis tables
-- Generating realistic synthetic historical data patterns
 
 ```SQL
 CREATE TABLE dams (
