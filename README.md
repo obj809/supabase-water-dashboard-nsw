@@ -46,40 +46,9 @@ A Supabase PostgreSQL-based system for tracking and analyzing dam data across NS
 
 ## Project Features
 
-- 36 NSW dams with metadata (capacity, coordinates, identifiers)
 - Dam grouping system (Sydney, popular, large, small, greatest released)
 - 24-month historical snapshots with time-series data
 - Per-dam and system-wide rolling average analysis (12-month, 5-year, 20-year)
-
-## Project Structure
-
-```
-supabase-water-dashboard-nsw/
-├── scripts/
-│   ├── db_connect.py                # Test database connectivity
-│   ├── create_schema.py             # Initialize database schema
-│   ├── seed_data.py                 # Run all seeders in sequence
-│   └── verify_seed.py               # Verify seeded data
-├── seeding/
-│   ├── db.py                        # Centralized database connection
-│   ├── seed_dams.py                 # Seed 36 NSW dams
-│   ├── seed_dam_groups.py           # Seed 5 dam groups
-│   ├── seed_dam_group_members.py    # Seed dam-group mappings
-│   ├── seed_dam_resources.py        # Seed 24-month historical data
-│   ├── seed_latest_data.py          # Seed current snapshot
-│   ├── seed_specific_dam_analysis.py
-│   └── seed_overall_dam_analysis.py
-├── example.env
-├── requirements.txt
-└── schema.sql
-```
-
-## Additions & Improvements
-
-- [ ] Dashboard visualization layer
-- [ ] Automated data refresh scheduling
-- [ ] Real-time data integration with WaterNSW API
-- [ ] Multi-region support
 
 ## Learning Highlights
 
