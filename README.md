@@ -11,18 +11,6 @@ A Supabase PostgreSQL-based system for tracking and analyzing dam data across NS
 - [Learning Highlights](#learning-highlights)
 - [Contact](#contact)
 
-## Goals & MVP
-
-Create a cloud-hosted system that stores dam metadata, tracks water storage levels, archives historical data, and generates analytical reports with rolling averages (12-month, 5-year, 20-year) for 36 NSW dams.
-
-## Tech Stack
-
-- Python 3
-- PostgreSQL (Supabase)
-- psycopg2-binary
-- python-dateutil
-- python-dotenv
-
 ## Database Schema
 
 ```SQL
@@ -103,6 +91,18 @@ CREATE TABLE dam_group_members (
     FOREIGN KEY (dam_id) REFERENCES dams(dam_id)
 );
 ```
+## Goals & MVP
+
+Create a cloud-hosted system that stores dam metadata, tracks water storage levels, archives historical data, and generates analytical reports with rolling averages (12-month, 5-year, 20-year) for 36 NSW dams.
+
+## Tech Stack
+
+- Python 3
+- PostgreSQL (Supabase)
+- psycopg2-binary
+- python-dateutil
+- python-dotenv
+
 ## How To Use
 
 1. Create virtual environment: `python3 -m venv venv && source venv/bin/activate`
