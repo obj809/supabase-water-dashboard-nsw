@@ -8,8 +8,6 @@ A Supabase PostgreSQL-based system for tracking and analyzing dam data across NS
 - [Tech Stack](#tech-stack)
 - [How To Use](#how-to-use)
 - [Project Features](#project-features)
-- [Project Structure](#project-structure)
-- [Additions & Improvements](#additions--improvements)
 - [Learning Highlights](#learning-highlights)
 - [Contact](#contact)
 
