@@ -8,7 +8,6 @@ Create a cloud-hosted system that stores dam metadata, tracks water storage leve
 
 ## Table of Contents
 
-- [Goals & MVP](#goals--mvp)
 - [Tech Stack](#tech-stack)
 - [How To Use](#how-to-use)
 - [Project Features](#project-features)
