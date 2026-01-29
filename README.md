@@ -2,6 +2,10 @@
 
 A Supabase PostgreSQL-based system for tracking and analyzing dam data across NSW, Australia. Built with Python and psycopg2.
 
+## Goals & MVP
+
+Create a cloud-hosted system that stores dam metadata, tracks water storage levels, archives historical data, and generates analytical reports with rolling averages (12-month, 5-year, 20-year) for 36 NSW dams.
+
 ## Table of Contents
 
 - [Goals & MVP](#goals--mvp)
@@ -10,10 +14,6 @@ A Supabase PostgreSQL-based system for tracking and analyzing dam data across NS
 - [Project Features](#project-features)
 - [Learning Highlights](#learning-highlights)
 - [Contact](#contact)
-
-## Goals & MVP
-
-Create a cloud-hosted system that stores dam metadata, tracks water storage levels, archives historical data, and generates analytical reports with rolling averages (12-month, 5-year, 20-year) for 36 NSW dams.
 
 ## Database Schema
 
