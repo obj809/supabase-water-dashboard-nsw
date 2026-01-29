@@ -15,15 +15,6 @@ Create a cloud-hosted system that stores dam metadata, tracks water storage leve
 - [Learning Highlights](#learning-highlights)
 - [Contact](#contact)
 
-## Tech Stack
-
-- Python 3
-- PostgreSQL (Supabase)
-- psycopg2-binary
-- python-dateutil
-- python-dotenv
-
-
 ## Database Schema
 
 ```SQL
@@ -104,6 +95,14 @@ CREATE TABLE dam_group_members (
     FOREIGN KEY (dam_id) REFERENCES dams(dam_id)
 );
 ```
+
+## Tech Stack
+
+- Python 3
+- PostgreSQL (Supabase)
+- psycopg2-binary
+- python-dateutil
+- python-dotenv
 
 ## How To Use
 
