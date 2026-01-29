@@ -25,27 +25,6 @@ Create a cloud-hosted system that stores dam metadata, tracks water storage leve
 - python-dateutil
 - python-dotenv
 
-## How To Use
-
-1. Create virtual environment: `python3 -m venv venv && source venv/bin/activate`
-2. Install dependencies: `pip install -r requirements.txt`
-3. Create `.env` file with Supabase credentials (see `example.env`)
-4. Run database setup: `python scripts/db_connect.py && python scripts/create_schema.py && python scripts/seed_data.py`
-5. Verify data: `python scripts/verify_seed.py`
-
-## Project Features
-
-- Dam grouping system (Sydney, popular, large, small, greatest released)
-- 24-month historical snapshots with time-series data
-- Per-dam and system-wide rolling average analysis (12-month, 5-year, 20-year)
-
-## Learning Highlights
-
-- Normalized database schema design with foreign key relationships
-- Cloud PostgreSQL deployment with Supabase
-- Orchestrated data pipelines with dependency ordering
-- Upsert patterns and composite primary keys in PostgreSQL
-
 ```SQL
 CREATE TABLE dams (
     dam_id VARCHAR(20) PRIMARY KEY,
@@ -124,7 +103,26 @@ CREATE TABLE dam_group_members (
     FOREIGN KEY (dam_id) REFERENCES dams(dam_id)
 );
 ```
+## How To Use
 
+1. Create virtual environment: `python3 -m venv venv && source venv/bin/activate`
+2. Install dependencies: `pip install -r requirements.txt`
+3. Create `.env` file with Supabase credentials (see `example.env`)
+4. Run database setup: `python scripts/db_connect.py && python scripts/create_schema.py && python scripts/seed_data.py`
+5. Verify data: `python scripts/verify_seed.py`
+
+## Project Features
+
+- Dam grouping system (Sydney, popular, large, small, greatest released)
+- 24-month historical snapshots with time-series data
+- Per-dam and system-wide rolling average analysis (12-month, 5-year, 20-year)
+
+## Learning Highlights
+
+- Normalized database schema design with foreign key relationships
+- Cloud PostgreSQL deployment with Supabase
+- Orchestrated data pipelines with dependency ordering
+- Upsert patterns and composite primary keys in PostgreSQL
 
 ## Contact Me
 - Visit my [LinkedIn](https://www.linkedin.com/in/obj809/) for more details.
