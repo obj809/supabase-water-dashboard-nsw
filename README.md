@@ -25,6 +25,8 @@ Create a cloud-hosted system that stores dam metadata, tracks water storage leve
 - python-dateutil
 - python-dotenv
 
+## Database Schema
+
 ```SQL
 CREATE TABLE dams (
     dam_id VARCHAR(20) PRIMARY KEY,
