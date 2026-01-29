@@ -1,4 +1,4 @@
-# Supabase Water Dashboard NSW
+# Supabase DB Water Dashboard NSW
 
 A Supabase PostgreSQL-based system for tracking and analyzing dam data across NSW, Australia. Built with Python and psycopg2.
 
@@ -18,7 +18,7 @@ A Supabase PostgreSQL-based system for tracking and analyzing dam data across NS
 
 ## Goals & MVP
 
-> "Create a cloud-hosted system that stores dam metadata, tracks water storage levels, archives historical data, and generates analytical reports with rolling averages (12-month, 5-year, 20-year) for 36 NSW dams."
+Create a cloud-hosted system that stores dam metadata, tracks water storage levels, archives historical data, and generates analytical reports with rolling averages (12-month, 5-year, 20-year) for 36 NSW dams.
 
 ## Tech Stack
 
